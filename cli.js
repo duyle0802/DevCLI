@@ -2,6 +2,12 @@
 
 import { select } from "@inquirer/prompts";
 import { spawn } from "child_process";
+import updateNotifier from "update-notifier";
+import pkg from "./pakage.json" assert { type: "json" };
+
+// notice user for update
+const notifier = updateNotifier({ pkg });
+nofitier.notify();
 
 function RunCommand(command, args) {
   const process = spawn(command, args, {
@@ -38,4 +44,3 @@ async function main() {
 
 main();
 console.log("CLI STARTED");
-console.log("TTY:", process.stdout.isTTY);

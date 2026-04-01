@@ -1,5 +1,5 @@
 {
-  "name": "mycli-tool",
+  "name": "@duyle29123/mycli-tool",
   "version": "1.1.0",
   "description": "CLI tool to run custom commands from .mycli.json",
   "main": "index.js",
